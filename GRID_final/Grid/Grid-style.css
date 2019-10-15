@@ -1,7 +1,12 @@
 ﻿body {
 }
+img {
+    width: 150px;
+ 
+}
 .parent {
-    display: grid;
+    width:100%;
+    display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 12px;
@@ -9,7 +14,13 @@
 }
 
 .div1 {
-    grid-area: 1 / 1 / 2 / 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px ;
+    justify-items: stretch ;
+        align-items: stretch
 }
 
 .div2 {
@@ -20,14 +31,3 @@
     grid-area: 3 / 1 / 4 / 2;
 }
 
-.div4 {
-    grid-area: 3 / 2 / 4 / 3;
-}
-
-.div5 {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-.div6 {
-    grid-area: 3 / 4 / 4 / 5;
-}
