@@ -14,13 +14,15 @@ img {
 }
 
 .div1 {
+    background-color: aqua;
     display: grid;
+    grid-template-areas: none;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 2fr;
     grid-column-gap: 20px;
-    grid-row-gap: 20px ;
-    justify-items: stretch ;
-        align-items: stretch
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch
 }
 
 .div2 {
